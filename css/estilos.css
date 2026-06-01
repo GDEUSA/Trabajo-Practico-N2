@@ -1,0 +1,102 @@
+:root {
+    --color-principal: #1a4b8c;
+    --fondo-cuerpo: bisque;
+    --blanco: #ffffff;
+}
+
+body {
+    background-color: var(--fondo-cuerpo);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px; /* Evita que el contenido toque los bordes del navegador */
+}
+
+/* Modelo de Caja: Estructura */
+header, main, footer {
+    max-width: 900px;
+    margin: 0 auto; /* Centra el contenido en pantallas grandes */
+    padding: 20px;
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.5); /* Le da un fondo sutil a las secciones */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px; /* Bordes redondeados modernos */
+    cursor: pointer;
+    transition: transform 0.2s; /* Efecto al pasar el mouse */
+}
+
+section:hover {
+    transform: scale(1.01); /* Sutil efecto de elevación */
+}
+
+/*Tipografía */
+h1 {
+    font-family: 'Georgia', serif;
+    color: var(--color-principal);
+    font-size: 36px;
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+/* Tablas */
+table {
+    border-collapse: collapse;
+    width: 100%; /* Ajuste responsivo al contenedor */
+    margin: 20px 0;
+    background-color: var(--blanco);
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid var(--color-principal);
+    text-align: center;
+}
+
+th {
+    background-color: var(--color-principal);
+    color: var(--blanco);
+    font-weight: bold;
+}
+
+.destacado {
+    border: 3px solid rgb(12, 73, 238);
+    background-color: #f0f8ff;
+    transition: all 0.3s ease;
+}
+
+.box {
+    border: 2px solid #1a4b8c;
+    padding: 20px;
+    margin: 20px auto; /* Centrado automático */
+    max-width: 800px;
+    background-color: #fdf5e6;
+    border-radius: 10px;
+}
+
+.tarjeta {
+    display: inline-block;
+    padding: 15px;
+    border: 2px solid #1a4b8c;
+    margin: 10px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.seleccionada {
+    background-color: #1a4b8c;
+    color: white;
+}
+
+.seleccionada {
+    background-color: #1a4b8c !important; /* El color azul que ya usas */
+    color: white !important;
+    border-color: #0d2a52 !important;
+}
