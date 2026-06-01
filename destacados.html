@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Restaurante-imagenes</title>
+        <link rel="stylesheet" href="css/estilos.css">
+    </head>
+
+    <!--Mantenemos el formato para conservar el orden y los enlances entre paginas-->
+    
+    <body>
+        <header>
+            <h1><span style="color:rgb(12, 73, 238)">Direcciones y Horarios</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="destacados.html">INFO</a></li>
+                    <li><a href="listado.html">Comidas</a></li>
+                    <li><a href="meriendas.html">PEDIR COMIDA</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h2>SUCURSALES</h2>
+                <!--Adicion de scrip de js para la busqueda de la tabla-->
+                <input type="text" id="busqueda" placeholder="Buscar...">
+
+                <!--Creacion de la tabla-->
+                
+                <table>
+                    <thread>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Ubicación</th>
+                        </tr>
+                    </thread>
+                    
+                    <!--Items de la tabla-->
+                    
+                    <tbody id="cuerpo-tabla">
+                        <tr>
+                            <td><strong>Patios Comida 1</strong></td>
+                            <td>Avenida Sta Rosa 400,La Rioja,La Rioja</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Patios Comida 2</strong></td>
+                            <td>Av Juan Quiroga 1070,La Rioja,La Rioja</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Patios Comida 3</strong></td>
+                            <td>Buenos Aires 253,La Rioja,La Rioja</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Patios Comida 4</strong></td>
+                            <td>San Nicolás de Bari 1100,La Rioja,La Rioja</td>
+                        </tr>
+                </table>
+            </section>
+
+            <!--Seccion de tabla con horarios-->
+
+            <section>
+    <h2><strong>Horarios de Lunes a Domingos</strong></h2>
+    <table>
+        <caption>Horarios detallados: </caption>
+        <thead>
+            <tr>
+                <th>Horario</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+                <th>Sábado</th>
+                <th>Domingo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>12:30 a 14:30</td>
+                <td>abierto</td>
+                <td>abierto</td>
+                <td>abierto</td>
+                <td>abierto</td>
+                <td>cerrado</td>
+                <td>cerrado</td>
+                <td>cerrado</td>
+            </tr>
+            <tr>
+                <td>21:00 a 02:00</td>
+                <td>cerrado</td>
+                <td>cerrado</td>
+                <td>cerrado</td>
+                <td>cerrado</td>
+                <td>abierto</td>
+                <td>abierto</td>
+                <td>abierto</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+        </main>
+
+        <footer>
+            <p>Trabajo practico n1 - Programacion 3</p>
+        </footer>
+        <script src="main.js"></script>
+    </body>
+</html>

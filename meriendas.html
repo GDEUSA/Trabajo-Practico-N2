@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Comidas</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body> 
+    <header>
+        <h1><span style="color:rgb(12, 73, 238)">PEDIDOS</span></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="destacados.html">INFO</a></li>
+                <li><a href="listado.html">Comidas</a></li>
+                <li><a href="meriendas.html">PEDIR COMIDA</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="box">
+            <h2>Menú del día</h2>
+            <p>Selecciona tu comida de la lista inferior:</p>
+            <p>Seleccionados: <span id="contador-seleccion">0</span></p>
+        </section>
+
+        <section class="box">
+            <h2>Patio de Comida</h2>
+            <div class="tarjeta">1. <small style="display:block; margin-top:5px; color:#be0303;">Lomito</small></div>
+            <div class="tarjeta">2. <small style="display:block; margin-top:5px; color:#be0303;">Hamburguesa</small></div>
+            <div class="tarjeta">3. <small style="display:block; margin-top:5px; color:#be0303;">Pizza</small></div>
+            <div class="tarjeta">4. <small style="display:block; margin-top:5px; color:#be0303;">Gaseosa</small></div>
+            <div class="tarjeta">5. <small style="display:block; margin-top:5px; color:#be0303;">Postre</small></div>
+            <p>Seleccionadas: <span id="contador">0</span></p>
+        </section>
+
+        <section class="box">
+            <h2>Listado (Filtro)</h2>
+            <div id="contenedor-items"></div>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body> 
+</html>
